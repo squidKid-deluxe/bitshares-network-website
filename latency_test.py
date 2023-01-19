@@ -300,7 +300,7 @@ def to_html(data, newlines="\n", font="sans-serif", size="4vw"):
     with the following format:
 
     ***
-    <DOCTYPE html>
+    <!DOCTYPE html>
     <html>
     <head>
         <link href="main.css" rel="stylesheet">
