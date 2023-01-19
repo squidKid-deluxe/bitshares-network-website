@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="main.css" rel="stylesheet">
+        <script type="text/javascript" src="tabs.js"></script>
+        <title>Bitshares Networks</title>
+        <link rel="icon" type="image/x-icon" href="./images/bitshares.png">
+    </head>
+    <body>
+        <div class="tab" style="position:relative;flex: 1;display: flex; width: 100%;">
+            <!-- <nav class="tab navwrap"> -->
+                <button class="tablinks" onclick="switch_tab(event, '1')">Pools</button>
+                <button class="tablinks" onclick="switch_tab(event, '2')">Home</button>
+                <button class="tablinks" onclick="switch_tab(event, '3')">Explorer</button>
+                <button class="tablinks" onclick="switch_tab(event, '4')">Market Cap</button>
+                <button class="tablinks" onclick="switch_tab(event, '5')">Links</button>
+                <button class="tablinks" onclick="switch_tab(event, '6')">Team</button>
+                <button class="tablinks" onclick="switch_tab(event, '7')">Nodes</button>
+            <!-- </nav> -->
+        </div>
+        <div class="tabcontent" style="display:block;">
+            <center>
+                <img src="./images/hollow_bitshares.png" height="100%" style="margin-top:10vh;overflow:hidden">
+            </center>
+        </div>
+        <object id="1" class="tabcontent" type="text/html" data="liquidity_pools.html">
+        </object> <object id="2" class="tabcontent" type="text/html" data="https://bitshares.github.io/">
+        </object> <object id="3" class="tabcontent" type="text/html" data="https://blocksights.info/#/pools/1.19.65" style=
+            "filter:invert(96%) hue-rotate(180deg) brightness(1.7);">
+        </object> <object id="4" class="tabcontent" type="text/html" data="https://crypto.com/price/bitshares" style=
+            "filter:invert(96%) hue-rotate(180deg) brightness(1.7);">
+        </object> <object id="5" class="tabcontent" type="text/html" data="awesome.html">
+        </object> <object id="6" class="tabcontent" type="text/html" data="https://bitsharesgroup.org/">
+        </object>
+        <div id="7" class="tabcontent wrapper nodes">
+            <object type="text/html" data="nodes.html" style="width:inherit;height:10vh; grid-column:3; grid-row:1"></object>
+            <object type="text/html" data="places.html" style="height:80vh;width:20vw; grid-column:1; grid-row:2"></object>
+            <img src="images/map.gif" style="width:57vw; grid-column:1; grid-row:2;top: -20vh;position:relative;"></img>
+            <object type="text/html" data="servers.html" style="height:80vh;width:20vw; grid-column:1; grid-row:2"></object>
+        </div>
+    </body>
+</html>
